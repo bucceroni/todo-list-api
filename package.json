@@ -1,0 +1,27 @@
+{
+  "name": "todo-list-api",
+  "version": "1.0.0",
+  "description": "Todo List API",
+  "engines": {
+    "node": "10.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bucceroni/todo-list-api.git"
+  },
+  "author": "Leonardo Depoian <depoian@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bucceroni/todo-list-api/issues"
+  },
+  "homepage": "https://github.com/bucceroni/todo-list-api#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
+  }
+}
