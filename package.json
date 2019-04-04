@@ -2,26 +2,34 @@
   "name": "todo-list-api",
   "version": "1.0.0",
   "description": "Todo List API",
+  "main": "app.js",
   "engines": {
     "node": "10.x"
   },
-  "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon ./src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bucceroni/todo-list-api.git"
   },
-  "author": "Leonardo Depoian <depoian@hotmail.com>",
+  "keywords": [
+    "Node",
+    "MongoDB",
+    "express"
+  ],
+  "author": "Leonardo Depoian Bucceroni",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bucceroni/todo-list-api/issues"
   },
   "homepage": "https://github.com/bucceroni/todo-list-api#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^7.0.0",
     "express": "^4.16.4",
+    "mongoose": "^5.4.21",
     "nodemon": "^1.18.10"
   }
 }
