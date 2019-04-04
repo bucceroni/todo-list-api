@@ -2,7 +2,7 @@
   "name": "todo-list-api",
   "version": "1.0.0",
   "description": "Todo List API",
-  "main": "./src/index",
+  "main": "./src/index.js",
   "engines": {
     "node": "10.x"
   },
