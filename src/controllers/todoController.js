@@ -19,7 +19,7 @@ exports.create = function(req, res) {
 
 exports.update = function(req, res) {
   Todo.findOneAndUpdate(
-    req.params.id,
+    { _id: req.params.id },
     { $set: req.body },
     { new: true },
     function(err, todo) {
@@ -34,7 +34,7 @@ exports.update = function(req, res) {
 };
 
 exports.delete = function(req, res) {
-  Todo.findOneAndDelete(req.params.id, function(err, todo) {
+  Todo.findOneAndDelete({ _id: req.params.id }, function(err, todo) {
     if (err) {
       res.status(400).send({
         message: err.message
@@ -51,6 +51,6 @@ exports.user = function(req, res) {
         message: err.message
       });
     }
-    res.status(200).json(todos);
+    res.send(todos);
   });
 };
