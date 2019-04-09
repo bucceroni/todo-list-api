@@ -4,7 +4,8 @@ exports.create = function(req, res) {
   let todo = new Todo({
     user: req.body.user,
     category: req.body.category,
-    description: req.body.description
+    description: req.body.description,
+    createdAt: req.body.createdAt ? req.body.createdAt : new Date()
   });
 
   todo.save(function(err) {
